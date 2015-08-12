@@ -1,0 +1,47 @@
+
+<ion-view view-title="Dia {{obUno.dt*1000 | date}}">
+ 
+<div class="list">
+  
+  <div class="item item-divider">
+    DETALLES DEL ESTADO DEL TIEMPO
+  </div>
+
+  <a class="item" href="#">
+    <img src="http://openweathermap.org/img/w/{{obUno.weather[0].icon}}.png"> <p>Fecha: {{obUno.dt*1000 | date}}</p>
+       
+  </a>
+   <a class="item" href="#">
+      <p>Temperaturas:</p>
+   </a>
+      <a class="item" href="#">
+         <p>Min {{obUno.temp.min}}° / Max {{obUno.temp.max}}°</p>
+   </a>
+      <a class="item" href="#">
+        <p>Temperatura por la mañana: {{obUno.temp.morn}}°</p>
+   </a>
+      <a class="item" href="#">
+         <p>Temperatura por la tarde: {{obUno.temp.eve}}°</p>
+   </a>
+         <a class="item" href="#">
+         <p>Temperatura por la noche: {{obUno.temp.night}}°</p>
+   </a>
+      <a class="item" href="#">
+           <p>Estado del tiempo: {{obUno.weather[0].description}}</p>
+   </a>
+      <a class="item" href="#">
+        <p>Humedad: {{obUno.humidity}}%</p>
+   </a>
+    <a class="item" href="#">
+      <p>Nubes: {{obUno.clouds}}</p>
+   </a>
+    <a class="item" href="#">
+      <p>Presión: {{obUno.pressure}}</p>
+   </a>
+    <a class="item" href="#">
+          <p>Probabilidad de lluvia: {{obUno.rain}}%</p>
+   </a>
+
+</div>
+
+</ion-view>
